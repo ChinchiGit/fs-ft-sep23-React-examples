@@ -1,0 +1,10 @@
+App
+    Header --> Header.jsx
+        Logo
+        Nav
+            Link*3
+    Main --> Main.jsx
+        ChristmasList --> <section>
+            ChristmasGift ---><article> h3,p,img,a + opciones para añadir/borrar item
+        SideInfo --> <aside>
+            SideItem --> <section>
