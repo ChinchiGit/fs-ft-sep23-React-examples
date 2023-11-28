@@ -5,6 +5,25 @@ App
             Link*3
     Main --> Main.jsx
         ChristmasList --> <section>
-            ChristmasGift ---><article> h3,p,img,a + opciones para añadir/borrar item
+            ChristmasWish ---><article> h3,p,img,a + opciones para añadir/borrar item
         SideInfo --> <aside>
             SideItem --> <section>
+    Footer
+
+
+-----------
+
+    App
+    Header --> Header.jsx
+        Logo
+        Nav
+            Link*3
+    Main --> Main.jsx
+        ChristmasContainer
+            ChristmasForm
+            ChristmasList --> <section>
+                ChristmasWish ---><article> h3,p,img,a + opciones para añadir/borrar item
+        SideInfo --> <aside>
+            SideItem --> <section>
+    Footer
+
