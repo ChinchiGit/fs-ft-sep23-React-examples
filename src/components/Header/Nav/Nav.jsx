@@ -10,6 +10,8 @@ const Nav = () => {
             <li> <Link to='/contact'>Contact</Link></li>
             <li> <Link to='/christmaslist'>Christmas List</Link></li>
             <li> <Link to='/staff'>Staff</Link></li>
+            <li> <Link to='/christmascourse'>Christmas Course</Link></li>
+            <li> <Link to='/topic'>Topic</Link></li>
         </ul >
     </nav >
 )

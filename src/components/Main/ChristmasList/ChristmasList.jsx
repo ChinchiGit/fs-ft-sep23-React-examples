@@ -55,7 +55,7 @@ const ChristmasList = () => {
         title={wish.title}
         price={wish.price}
         url={wish.url}
-        deleteWish={() => deleteWish(i)}
+        deleteWish={() => deleteWish(i)} // función de callback
       />
     ));
   };

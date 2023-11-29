@@ -7,6 +7,8 @@ import About from "./About";
 import Contact from "./Contact";
 import Home from "./Home";
 import Staff from "./Staff";
+import ChristmasCourse from "./ChristmasCourse";
+import Topic from "./Topic";
 
 const Main = () => {
   return (
@@ -27,6 +29,8 @@ const Main = () => {
         <Route path="/contact" element={<Contact/>} />
         <Route path="/staff" element={<Staff/>} />
         <Route path="/christmaslist" element={<ChristmasList/>} />
+        <Route path="/christmascourse" element={<ChristmasCourse/>} />
+        <Route path="/topic" element={<Topic/>} />
         <Route path="/*" element={<Navigate to={"/"} />} />
       </Routes>
     </main>
