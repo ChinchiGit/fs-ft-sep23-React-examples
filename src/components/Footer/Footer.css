@@ -1,0 +1,16 @@
+.footer-day {
+  background-color: #f4e285;
+  color: #5b8e7d;
+}
+
+.footer-night {
+  background-color: #bc4b51;
+  color: #f4e285;
+}
+
+ul>li{
+    display:flex;
+    justify-content: space-around;
+    width:100vw;
+    list-style: none;
+}

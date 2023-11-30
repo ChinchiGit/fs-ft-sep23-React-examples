@@ -4,6 +4,7 @@ App
         Nav
             Link*3
     Main --> Main.jsx
+        Home
         ChristmasList --> <section>
             ChristmasWish ---><article> h3,p,img,a + opciones para añadir/borrar item
         SideInfo --> <aside>

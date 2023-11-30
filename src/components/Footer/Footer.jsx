@@ -1,8 +1,13 @@
-import React from "react";
+import { useContext} from 'react'
+import { ThemeContext } from '../../context/ThemeContext'
+import './Footer.css';
 
 const Footer = () => {
+
+  const { theme } = useContext(ThemeContext); // Consumer
+
   return (
-    <footer>
+    <footer className={`footer-${theme}`}>
       <p>Esto es mi footer</p>
       <ul>
         <li>
