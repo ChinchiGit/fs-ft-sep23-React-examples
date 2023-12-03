@@ -1,0 +1,29 @@
+@import '../utils/variables.scss';
+@import '../utils/mixins.scss';
+
+
+%footer-bar-basic{
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    min-height:12vh;
+    color:white;
+    margin:0px;
+    &>ul{
+        list-style: none;
+        display:flex;
+        gap: 10px
+    }
+}
+
+.footer-day{
+    @extend %footer-bar-basic;
+    background-color:$red;
+    color: $white
+}
+
+.footer-night{
+    @extend %footer-bar-basic;
+    background-color: $blue;
+    color: $white
+}

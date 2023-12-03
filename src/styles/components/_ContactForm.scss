@@ -1,0 +1,13 @@
+@import '../utils/variables.scss';
+@import '../utils/mixins.scss';
+
+.formContact{
+    height: 128px;
+    width: 512px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: $white;
+    border-radius: 10px;
+    gap: 24px
+}

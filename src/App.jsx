@@ -2,8 +2,6 @@ import { BrowserRouter } from "react-router-dom";
 import { useState } from "react";
 import { UserContext } from "./context/UserContext";
 import { ThemeContext } from "./context/ThemeContext";
-
-
 import "./App.css";
 import Header from "./components/Header";
 import Main from "./components/Main";
@@ -29,6 +27,7 @@ function App() {
 
   return (
     <>
+
       <ThemeContext.Provider value={themeData}>
         <BrowserRouter>
           <UserContext.Provider value={userData}>

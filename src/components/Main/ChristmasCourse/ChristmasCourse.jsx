@@ -1,4 +1,8 @@
 import React, { useEffect, useState } from 'react';
+import Box from '@mui/material/Box';
+import TextField from '@mui/material/TextField';
+import Button from '@mui/material/Button';
+
 
 const ChristmasCourse = () => {
 
@@ -50,15 +54,17 @@ const ChristmasCourse = () => {
   }, [nombre])
   
   return(
-      <form className="mt-4" onSubmit={handleSubmit} >
-          <input type="text" name='nombre' onChange={handleChange}/>
-          <input type="text" name='email' />
-          <input type="text" name='curso'/>
-
-          <textarea name="comentario" placeholder='Comentario' />
-
-          <button type='submit' >Enviar</button>
-      </form>
+      <Box
+        component="form"
+        sx={{'& > :not(style)': { m: 1, width: '25ch' }}}
+        noValidate
+        autoComplete="off"
+        className="mt-4" onSubmit={handleSubmit}>
+        <TextField id="outlined-basic" label="Nombre" variant="filled" name='nombre' onChange={handleChange} />
+        <TextField id="outlined-basic" label="Email" variant="filled" name='email' />
+        <TextField id="outlined-basic" label="Curso" variant="filled" name='curso' />
+        <Button type='submit' variant="contained" >Enviar</Button>
+  </Box>      
 
   )
 }
