@@ -1,0 +1,29 @@
+@import '../utils/variables.scss';
+@import '../utils/mixins.scss';
+
+%header-basic{
+    display: flex;
+    max-height: 12vh;
+    margin:0px;
+    align-items: center;
+}
+
+.header-day{
+    @extend %header-basic;
+    background-color: $red;
+    color: $white;
+    }
+    
+.header-night{
+    @extend %header-basic;
+    background-color: $blue;
+    color: $white
+}
+
+.pUser-day{
+    color: $red;
+}
+
+.pUser-night{
+    color: $blue;
+}

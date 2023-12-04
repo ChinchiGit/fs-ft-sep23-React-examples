@@ -1,4 +1,6 @@
 import React, { useState } from 'react';
+import { Button, TextField } from '@mui/material'
+
 
 const FormContact = ({ add }) => {
   const [inputValue, setInputValue] = useState('');
@@ -12,9 +14,9 @@ const FormContact = ({ add }) => {
   };
 
   return (
-    <div>
-      <input type="text" value={inputValue} onChange={handleChange} />
-      <button onClick={handleClick}>Enviar mensaje</button>
+    <div className='formContact'>
+      <TextField type="text" value={inputValue} onChange={handleChange} />
+      <Button variant="contained" onClick={handleClick}>Enviar mensaje</Button>
     </div>
   );
 };

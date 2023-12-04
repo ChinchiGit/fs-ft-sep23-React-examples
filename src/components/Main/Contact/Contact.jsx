@@ -17,7 +17,8 @@ const Contact = () => {
     setData(data);
   }
 
-  return <div>
+  return <div className="contactContainer">
+    <h3>Formulario de registro</h3>
     <FormContact add={addData}/> {/* Sibling 1 */}
     <CardContact data={data} clear={clearData}/> {/* Sibling 2 */}
     </div>;

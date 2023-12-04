@@ -1,6 +1,5 @@
 import { useContext} from 'react'
 import { ThemeContext } from '../../context/ThemeContext'
-import './Footer.css';
 
 const Footer = () => {
 
@@ -8,16 +7,16 @@ const Footer = () => {
 
   return (
     <footer className={`footer-${theme}`}>
-      <p>Esto es mi footer</p>
+      <p className={`footer-${theme}`}>Redes sociales</p>
       <ul>
-        <li>
-          <a href="#">Twitter</a>
+        <li className={'link-'+theme}>
+          <a className={'link-'+theme} href="#">Twitter</a>
         </li>
-        <li>
-          <a href="#">Facebook</a>
+        <li className={'link-'+theme}>
+          <a  className={'link-'+theme} href="#">Facebook</a>
         </li>
-        <li>
-          <a href="#">Instagram</a>
+        <li className={'link-'+theme}>
+          <a className={'link-'+theme} href="#">Instagram</a>
         </li>
       </ul>
     </footer>
