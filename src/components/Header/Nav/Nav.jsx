@@ -18,6 +18,8 @@ const { theme, toggleTheme } = useContext(ThemeContext)
             <li> <Link className={'link-'+theme} to='/staff'>Staff</Link></li>
             <li> <Link className={'link-'+theme} to='/christmascourse'>Christmas Course</Link></li>
             <li> <Link className={'link-'+theme} to='/topic'>Topic</Link></li>
+            <li> <Link className={'link-'+theme} to='/donations'>Donations</Link></li>
+
         </ul >
     </nav >
 )

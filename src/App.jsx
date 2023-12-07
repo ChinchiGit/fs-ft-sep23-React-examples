@@ -1,5 +1,7 @@
 import { BrowserRouter } from "react-router-dom";
 import { useState } from "react";
+import { Provider } from "react-redux";
+import store from "./redux/store";
 import { UserContext } from "./context/UserContext";
 import { ThemeContext } from "./context/ThemeContext";
 import "./App.css";
@@ -27,16 +29,17 @@ function App() {
 
   return (
     <>
-
-      <ThemeContext.Provider value={themeData}>
-        <BrowserRouter>
-          <UserContext.Provider value={userData}>
-            <Header />
-            <Main />
-          </UserContext.Provider>
-        </BrowserRouter>
-        <Footer />
-      </ThemeContext.Provider>
+      <Provider store={store}>
+        <ThemeContext.Provider value={themeData}>
+          <BrowserRouter>
+            <UserContext.Provider value={userData}>
+              <Header />
+              <Main />
+            </UserContext.Provider>
+          </BrowserRouter>
+          <Footer />
+        </ThemeContext.Provider>
+      </Provider>
     </>
   );
 }

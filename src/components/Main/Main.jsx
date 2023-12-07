@@ -9,6 +9,7 @@ import Home from "./Home";
 import Staff from "./Staff";
 import ChristmasCourse from "./ChristmasCourse";
 import Topic from "./Topic";
+import Donations from "./Donations";
 
 const Main = () => {
   return (
@@ -21,6 +22,7 @@ const Main = () => {
         <Route path="/christmaslist" element={<ChristmasList/>} />
         <Route path="/christmascourse" element={<ChristmasCourse/>} />
         <Route path="/topic" element={<Topic/>} />
+        <Route path="/donations" element={<Donations/>} />
         <Route path="/*" element={<Navigate to={"/"} />} />
       </Routes>
     </main>
