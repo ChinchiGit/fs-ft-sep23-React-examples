@@ -5,12 +5,12 @@ import UserContainer from "./UserContainer";
 
 const Donations = () => {
   return (
-    <div>
-      Donations
+    <section>
+      <h1>Donations</h1>
       <CounterContainer />
       <MessageContainer />
       <UserContainer />
-    </div>
+    </section>
   );
 };
 

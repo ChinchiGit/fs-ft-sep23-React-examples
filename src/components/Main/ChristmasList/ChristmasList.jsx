@@ -112,8 +112,8 @@ const ChristmasList = () => {
   };
 
   return (
-    <>
-      <h2 className="h2List">Lista de deseos</h2>
+    <section>
+      <h1 className="h2List">Lista de deseos</h1>
       <button onClick={createWish}>Pide tu deseo</button>
       <button onClick={clearWishes}>Limpiar</button>
       <button onClick={resetWishes}>Recargar</button>
@@ -138,7 +138,7 @@ const ChristmasList = () => {
       </form>
 
       <section className="wishesContainer">{paintWishes()}</section>
-    </>
+    </section>
   );
 };
 

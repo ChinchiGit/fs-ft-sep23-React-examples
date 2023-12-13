@@ -8,13 +8,13 @@ function MessageContainer () {
 
   const [text, setText] = useState("") // guarda lo que pongas en el input de texto
 
-  return <div>
-    <h2>Envío de mensajes</h2>
+  return <section>
+    <h1>Envío de mensajes</h1>
     <h3>Mensaje recibido:{message}</h3>
     <input type="text" onChange={e => setText(e.target.value)} />
     <button onClick={() => dispatch(writeMessage(text))}>Enviar mensaje</button>
     <button onClick={() => dispatch(deleteMessage())}>Borrar mensaje</button>
-  </div>
+  </section>
 }
 
 export default MessageContainer

@@ -24,48 +24,51 @@ const Staff = () => {
   }, []);
 
   return (
-    <ul className="staffList">
-      {pokemons.length != 0 ? (
-        pokemons.results.map((pokemon, i) => (
-          <Card sx={{ maxWidth: 275, minWidth: 275 }} key={i}>
-            <CardContent>
-              <Typography
-                sx={{ fontSize: 14 }}
-                color="text.secondary"
-                gutterBottom
-              >
-                {pokemon.name}
-              </Typography>
-              <Button variant="outlined">
-                <a href={pokemon.url}> URL</a>
-              </Button>
-            </CardContent>
-          </Card>
-        ))
-      ) : (
-        <>
-          <h3>Cargando...</h3>
-          <Audio
-            height="80"
-            width="80"
-            radius="9"
-            color="white"
-            ariaLabel="loading"
-            wrapperStyle
-            wrapperClass
-          />
-          <Vortex
-            visible={true}
-            height="80"
-            width="80"
-            ariaLabel="vortex-loading"
-            wrapperStyle={{}}
-            wrapperClass="vortex-wrapper"
-            colors={["red", "green", "blue", "yellow", "orange", "purple"]}
-          />
-        </>
-      )}
-    </ul>
+    <section>
+      <h1>Staff</h1>
+      <ul className="staffList">
+        {pokemons.length != 0 ? (
+          pokemons.results.map((pokemon, i) => (
+            <Card sx={{ maxWidth: 275, minWidth: 275 }} key={i}>
+              <CardContent>
+                <Typography
+                  sx={{ fontSize: 14 }}
+                  color="text.secondary"
+                  gutterBottom
+                >
+                  {pokemon.name}
+                </Typography>
+                <Button variant="outlined">
+                  <a href={pokemon.url}> URL</a>
+                </Button>
+              </CardContent>
+            </Card>
+          ))
+        ) : (
+          <>
+            <h3>Cargando...</h3>
+            <Audio
+              height="80"
+              width="80"
+              radius="9"
+              color="white"
+              ariaLabel="loading"
+              wrapperStyle
+              wrapperClass
+            />
+            <Vortex
+              visible={true}
+              height="80"
+              width="80"
+              ariaLabel="vortex-loading"
+              wrapperStyle={{}}
+              wrapperClass="vortex-wrapper"
+              colors={["red", "green", "blue", "yellow", "orange", "purple"]}
+            />
+          </>
+        )}
+      </ul>
+    </section>
   );
 };
 

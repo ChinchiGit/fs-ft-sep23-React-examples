@@ -33,7 +33,7 @@ const Topic = () => {
 
 
   return    <section>
-              <h1>Búsqueda por topic</h1>
+              <h1>Topic</h1>
               <form onSubmit={handleSubmit}>
                 <input name="topic"/>
               </form>
